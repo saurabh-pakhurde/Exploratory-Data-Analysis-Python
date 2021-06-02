@@ -1,0 +1,12 @@
+In [0]:
+print(df.isnull().sum())
+
+
+
+In [0]:
+df = df.dropna()    # Dropping the missing values.
+df.count()
+
+
+In [0]:
+print(df.isnull().sum())   # After dropping the values
