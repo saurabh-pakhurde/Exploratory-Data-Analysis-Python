@@ -1,0 +1,17 @@
+In [0]:df.shape
+
+In [0]:
+duplicate_rows_df = df[df.duplicated()]
+print("number of duplicate rows: ", duplicate_rows_df.shape)
+
+In [0]:
+df.count()      # Used to count the number of rows
+
+In [0]:
+df = df.drop_duplicates()
+df.head(5)
+
+
+In [0]:
+
+df.count()
