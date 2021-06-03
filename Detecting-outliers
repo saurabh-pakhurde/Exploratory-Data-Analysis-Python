@@ -1,0 +1,41 @@
+
+In [0]:
+
+sns.boxplot(x=df['Price'])
+
+Out[0]:
+
+<matplotlib.axes._subplots.AxesSubplot at 0x7f0d36a38be0>
+
+
+In [0]:
+
+sns.boxplot(x=df['HP'])
+
+Out[0]:
+
+<matplotlib.axes._subplots.AxesSubplot at 0x7f0d369b3ba8>
+
+
+In [0]:
+
+sns.boxplot(x=df['Cylinders'])
+
+Out[0]:
+
+<matplotlib.axes._subplots.AxesSubplot at 0x7f0d3413ff28>
+
+
+In [0]:
+
+Q1 = df.quantile(0.25)
+Q3 = df.quantile(0.75)
+IQR = Q3 - Q1
+print(IQR)
+
+
+In [0]:
+
+df = df[~((df < (Q1 - 1.5 * IQR)) |(df > (Q3 + 1.5 * IQR))).any(axis=1)]
+df.shape
+
