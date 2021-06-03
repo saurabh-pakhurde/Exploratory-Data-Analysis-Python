@@ -1,0 +1,8 @@
+
+In [0]:
+
+plt.figure(figsize=(10,5))
+c= df.corr()
+sns.heatmap(c,cmap="BrBG",annot=True)
+c
+
