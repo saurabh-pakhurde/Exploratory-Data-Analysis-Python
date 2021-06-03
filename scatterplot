@@ -1,0 +1,9 @@
+
+In [0]:
+
+fig, ax = plt.subplots(figsize=(10,6))
+ax.scatter(df['HP'], df['Price'])
+ax.set_xlabel('HP')
+ax.set_ylabel('Price')
+plt.show()
+
